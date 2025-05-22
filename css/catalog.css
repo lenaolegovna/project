@@ -1,0 +1,180 @@
+/* ── базовые ─────────────────────────────────────────────── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: #fafafa;
+    color: #222;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+.book-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+}
+
+.logo-text {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e1e1e; /* можно поменять под цветовую схему */
+  font-family: 'Arial', sans-serif;
+}
+
+.search {
+  padding: 0.6rem 1rem;
+  width: 60%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* ── age categories ─────────────────────────────────────── */
+.age-block {
+  background: #fff;           
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+}
+
+.age-block h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.age-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.age-grid button {
+  flex: 1;
+  min-width: 180px;
+  background: #fff;
+  border: 2px solid #1c73c9;     /* фирменная синяя рамка */
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.age-grid button:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.age-grid span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* ── popular books ──────────────────────────────────────── */
+.popular-block {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.popular-block h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* новая сетка: 4 колонки, 2 строки */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* карточки остаются без изменений */
+.book-card {
+  background: #fff;
+  border: 1px solid #e2e6ea;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+  transition: transform .15s;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+}
+
+.book-card img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.book-card h3 {
+  font-size: .95rem;
+  padding: .6rem .8rem 0;
+}
+
+.book-card p {
+  font-size: .85rem;
+  color: #555;
+  padding: 0 .8rem .6rem;
+}
+
+.stars {
+  font-size: .8rem;
+  color: #ffb400;
+  padding: 0 .8rem 1rem;
+}
+
+/* адаптивность: 2 колонки на мобильных */
+@media (max-width: 800px) {
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .books-grid {
+    grid-template-columns: 1fr;
+  }
+}

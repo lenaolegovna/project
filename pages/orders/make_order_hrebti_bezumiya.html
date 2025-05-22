@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заказ книги — ЧтецPro</title>
+    <link rel="icon" type="image/svg" href="../../images/logo.svg">
+    <link rel="stylesheet" href="../../css/order.css" />
+  </head>
+  <body>
+    <div class="order-page">
+
+      <header class="book-header">
+        <div class="header-logo">
+          <a href="../../index.html" class="logo-link">
+            <img src="../../images/logo.svg" alt="Логотип ЧтецPro"
+              class="logo-image">
+            <span class="logo-text">ЧтецPro</span>
+          </a>
+        </div>
+        <input type="text" class="search"
+          placeholder="Поиск по названию или автору..." />
+      </header>
+
+      <!-- основная зона заказа -->
+      <main class="order-container">
+        <h1 class="order-title">Оформление заказа</h1>
+
+        <div class="order-card">
+
+          <!-- левая часть: обложка и кратко о книге -->
+          <div class="book-summary">
+            <img src="../../images/books_titles/hrebti_bevumiya.jpg"
+              alt="Хребты безумия">
+            <div class="summary-text">
+              <h2>Хребты безумия</h2>
+              <p>Говард Филипс Лавкрафт</p>
+              <p class="price">₽ 1200</p>
+            </div>
+          </div>
+
+          <!-- правая часть: форма -->
+          <form class="order-form">
+            <h3>Ваши данные</h3>
+            <input type="text" placeholder="Имя" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Телефон" required>
+
+            <h3>Адрес доставки</h3>
+            <input type="text" placeholder="Город" required>
+            <input type="text" placeholder="Улица, дом, квартира" required>
+            <input type="text" placeholder="Почтовый индекс" required>
+
+            <h3>Способ оплаты</h3>
+            <label><input type="radio" name="pay" checked> Картой онлайн</label>
+            <label><input type="radio" name="pay"> При получении</label>
+
+            <button type="submit" class="confirm-btn">Подтвердить заказ</button>
+          </form>
+
+        </div>
+      </main>
+
+    </div>
+  </body>
+</html>
