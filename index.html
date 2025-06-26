@@ -1,0 +1,192 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ЧтецPro</title>
+    <link rel="icon" type="image/svg" href="./images/logo.svg">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <div id="preloader">
+      <div class="loader-spinner"></div>
+    </div>
+
+    <header class="topbar">
+      <div class="header-logo">
+        <a href="index.html" class="logo-link">
+          <img src="./images/logo.svg" alt="Логотип ЧтецPro" class="logo-image">
+          <span class="logo-text">ЧтецPro</span>
+        </a>
+      </div>
+
+      <nav class="header-menu">
+        <a href="pages/catalog.html">Каталог</a>
+        <a href="#">Лучшее</a>
+        <a href="#">Популярное</a>
+        <a href="#">Страна написания</a>
+      </nav>
+
+      <div class="auth-buttons">
+        <a href="#login-modal">Вход</a>
+        <a href="#register-modal">Регистрация</a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="search-box">
+        <input type="text" placeholder="Поиск по названию произведения" />
+      </div>
+
+      <section class="section wide">
+        <h2>Популярные произведения</h2>
+        <div class="slider-wrapper">
+          <button class="slider-btn prev">&#8592;</button>
+          <div class="slider-window">
+            <div class="slider-track" id="slider-track">
+              <!-- Карточки создаются JavaScript-ом -->
+            </div>
+          </div>
+          <button class="slider-btn next">&#8594;</button>
+        </div>
+      </section>
+
+      <div class="row">
+        <section class="section half">
+          <h2>Популярные авторы</h2>
+          <ul class="author-list">
+            <li class="author-item">
+              <div class="author-avatar">
+                <img src="images/writers/fedor_dostoevskii.jpg"
+                  alt="Фото автора" />
+              </div>
+              <div class="author-info">
+                <div class="author-name">Фёдор Достоевский</div>
+                <div class="author-books-count">Произведений: 12</div>
+              </div>
+            </li>
+            <li class="author-item">
+              <div class="author-avatar">
+                <img src="images/writers/lev_tolstoy.jpg" alt="Фото автора" />
+              </div>
+              <div class="author-info">
+                <div class="author-name">Лев Толстой</div>
+                <div class="author-books-count">Произведений: 14</div>
+              </div>
+            </li>
+            <li class="author-item">
+              <div class="author-avatar">
+                <img src="images/writers/alexandr_pushkin.jpg"
+                  alt="Фото автора" />
+              </div>
+              <div class="author-info">
+                <div class="author-name">Александр Пушкин</div>
+                <div class="author-books-count">Произведений: 24</div>
+              </div>
+            </li>
+            <li class="author-item">
+              <div class="author-avatar">
+                <img src="images/writers/mihail_bulgakov.png"
+                  alt="Фото автора" />
+              </div>
+              <div class="author-info">
+                <div class="author-name">Михаил Булгаков</div>
+                <div class="author-books-count">Произведений: 8</div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="section half">
+          <h2>Категории по возрасту</h2>
+          <div class="age-categories">
+            <a href="#" class="age-category">
+              <span>Детская литература</span>
+              <small>0-12 лет</small>
+            </a>
+            <a href="#" class="age-category">
+              <span>Подростковая литература</span>
+              <small>12-16 лет</small>
+            </a>
+            <a href="#" class="age-category">
+              <span>Юношеская литература</span>
+              <small>16-21 год</small>
+            </a>
+            <a href="#" class="age-category">
+              <span>Взрослая литература</span>
+              <small>21+ лет</small>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="row">
+        <section class="section half">
+          <h2>Отзывы</h2>
+          <ul class="reviews-list">
+            <li class="review-item">
+              <div class="review-header">
+                <div class="review-user">Мария К.</div>
+                <div class="review-date">10.05.2025</div>
+              </div>
+              <div class="review-rating">★★★★★</div>
+              <div class="review-book">Книга: "Мастер и Маргарита"</div>
+              <div class="review-text">Потрясающее произведение, перечитываю уже
+                третий раз. Каждый раз открываю что-то новое.</div>
+            </li>
+            <li class="review-item">
+              <div class="review-header">
+                <div class="review-user">Иван П.</div>
+                <div class="review-date">09.05.2025</div>
+              </div>
+              <div class="review-rating">★★★★☆</div>
+              <div class="review-book">Книга: "Преступление и наказание"</div>
+              <div class="review-text">Глубокий психологический роман,
+                заставляющий задуматься.</div>
+            </li>
+          </ul>
+        </section>
+        <section class="section half">
+          <h2>Ссылки на соцсети</h2>
+          <div class="social-links">
+            <a href="#" class="social-link">ВКонтакте</a>
+            <a href="#" class="social-link">Telegram</a>
+            <a href="#" class="social-link">YouTube</a>
+            <a href="#" class="social-link">Дзен</a>
+            <a href="#" class="social-link">Rutube</a>
+            <a href="#" class="social-link">Одноклассники</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <a href="#" class="close-btn">×</a>
+        <h2>Вход</h2>
+        <form>
+          <input type="text" placeholder="Email или номер телефона" required />
+          <input type="password" placeholder="Пароль" required />
+          <button type="submit">Войти</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="register-modal" class="modal">
+      <div class="modal-content">
+        <a href="#" class="close-btn">×</a>
+        <h2>Регистрация</h2>
+        <form>
+          <input type="email" placeholder="Email или номер телефона" required />
+          <input type="password" placeholder="Пароль" required />
+          <input type="password" placeholder="Повторите пароль" required />
+          <button type="submit">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+    <a href="#" id="scrollToTop" title="Наверх">↑</a>
+  </body>
+</html>
