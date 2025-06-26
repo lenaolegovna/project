@@ -6,7 +6,13 @@
     <link rel="icon" type="image/svg" href="./images/logo.svg">
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
+
+    <div id="preloader">
+      <div class="loader-spinner"></div>
+    </div>
+
     <header class="topbar">
       <div class="header-logo">
         <a href="index.html" class="logo-link">
@@ -35,52 +41,14 @@
 
       <section class="section wide">
         <h2>Популярные произведения</h2>
-        <div class="book-cards">
-          <a href="pages/books/book_voina_i_mir.html" class="book-card">
-            <div class="book-cover">
-              <img src="images/books_titles/voina_i_mir.jpg"
-                alt="Обложка книги 1" />
+        <div class="slider-wrapper">
+          <button class="slider-btn prev">&#8592;</button>
+          <div class="slider-window">
+            <div class="slider-track" id="slider-track">
+              <!-- Карточки создаются JavaScript-ом -->
             </div>
-            <div class="book-info">
-              <div class="book-title">Война и мир</div>
-              <div class="book-author">Лев Толстой</div>
-              <div class="book-rating">★★★★★</div>
-            </div>
-          </a>
-          <a href="pages/books/book_prestuplenie_i_nakazanie.html"
-            class="book-card">
-            <div class="book-cover">
-              <img src="images/books_titles/prestuplenii_i_nakazanie.png"
-                alt="Обложка книги 2" />
-            </div>
-            <div class="book-info">
-              <div class="book-title">Преступление и наказание</div>
-              <div class="book-author">Фёдор Достоевский</div>
-              <div class="book-rating">★★★★☆</div>
-            </div>
-          </a>
-          <a href="pages/books/book_master_i_margarita.html" class="book-card">
-            <div class="book-cover">
-              <img src="images/books_titles/master_i_margarita.jpg"
-                alt="Обложка книги 3" />
-            </div>
-            <div class="book-info">
-              <div class="book-title">Мастер и Маргарита</div>
-              <div class="book-author">Михаил Булгаков</div>
-              <div class="book-rating">★★★★★</div>
-            </div>
-          </a>
-          <a href="pages/books/book_anna_karenina.html" class="book-card">
-            <div class="book-cover">
-              <img src="images/books_titles/anna_karenina.jpg"
-                alt="Обложка книги 4" />
-            </div>
-            <div class="book-info">
-              <div class="book-title">Анна Каренина</div>
-              <div class="book-author">Лев Толстой</div>
-              <div class="book-rating">★★★★☆</div>
-            </div>
-          </a>
+          </div>
+          <button class="slider-btn next">&#8594;</button>
         </div>
       </section>
 
@@ -216,5 +184,9 @@
         </form>
       </div>
     </div>
+
+    <script src="js/main.js"></script>
+
+    <a href="#" id="scrollToTop" title="Наверх">↑</a>
   </body>
 </html>
